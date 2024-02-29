@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background-color: rgb(202, 214, 202);
+}
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 2px solid black;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.print-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.no-print{
+    width: 120px;
+    height: 30px;
+}
+.no-print:hover{
+    width: 140px;
+}
+@media print {
+    .no-print {
+        display: none;
+    }
+}
