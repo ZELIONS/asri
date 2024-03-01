@@ -173,9 +173,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['_upload'])) {
             </select>
 
             <label>Gambar</label>
-            <input type="file" required class="input-gambar" name="gambar">
+            <input type="file" required class="input-gambar"  style="background-color:#fff" name="gambar">
             <input type="hidden" name="_upload" value="upload">
-            <input type="submit" value="submit" class="submit">
+            <input type="submit" value="Submit" class="submit ">
         </form>
 
 

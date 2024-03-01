@@ -1,6 +1,7 @@
 /* Google Fonts Import Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -252,7 +253,7 @@
 
 .home-section {
     position: relative;
-    background: #576fb0;
+    background: #a3b8f2;
     left: 260px;
     width: calc(100% - 260px);
     transition: all 0.5s ease;
@@ -295,26 +296,30 @@
 
 .container {
     width: calc(100% -85px);
-    background-color: aqua;
+    background-color: #e2efff;
     margin-left: 78px;
+    border: 1px solid black;
 }
-
 .top-container {
     width: 100%;
-    background-color: #535C91;
+    background-color: #CCE5FF;
+    border: 1px solid black;
+    
 }
 
 .top-container-head {
     width: 100%;
     height: 40px;
     display: flex;
-
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    background-color: #040076;
 }
 
 .top-container-head div{
     display: flex;
     align-items: center;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(0, 0, 0);
     padding-left: 5px;
 }
 .top-container-head div:last-child {
@@ -330,7 +335,7 @@
 .top-container-body div{
     display: flex;
     align-items: center;
-    border-right: 1px solid white;
+    border-right: 1px solid rgb(0, 0, 0);
     padding-left: 5px;
 }
 .top-container-body div:last-child {
@@ -355,7 +360,7 @@
     width: 100%;
     border: none;
     border-radius: 10px;
-    background-color: #1D24CA;
+    background-color: yellow;
     color: white;
 }
 .buku-edit:hover{
@@ -374,13 +379,14 @@
 }
 
 .rekomendasi-card {
-    width: 180px;
-    height: 100%;
-    background-color: #474F7A;
+    width: 200px;
+    height: 120%;
+    background-color: #ffffff;
     margin-top: 5px;
     margin-left: 5px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
 }
 
 .card-gambar {
@@ -400,7 +406,9 @@
 }
 
 .penulis {
-    font-size: 12px;
+    font-size: 22px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 .genre {
@@ -412,7 +420,7 @@
 }
 
 .rating {
-    background-color: rgba(255, 255, 255, 0.418);
+    background-color: rgb(255, 255, 16);
     width: 40px;
     text-align: center;
 }
@@ -433,6 +441,8 @@
     background-color: red;
     border: none;
     border-radius: 5px;
+   
+    
 }
 
 .hapus:hover {

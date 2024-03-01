@@ -156,7 +156,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
         <div class="top-container">
             <div class="top-container-head">
                 <div class="id">
-                    <p>Id</p>
+                    <p>ID</p>
                 </div>
 
                 <div class="nama-buku">
@@ -188,7 +188,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
                     </div>
 
                     <div class="aksi">
-                        <button class="buku-edit"><a style="text-decoration: none; color:white" href="edit-kategori.php?id=<?php echo $data_kategori['id']; ?>">Edit</a></button>
+                        <button class="buku-edit"><a style="text-decoration: none; color:black" href="edit-kategori.php?id=<?php echo $data_kategori['id']; ?>">Edit</a></button>
                     </div>
                 </div>
             <?php endforeach; ?>
@@ -215,8 +215,8 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['id'])) {
                     </div>
                     <hr>
                     <div class="button-container">
-                        <button class="hapus"><a href="?id=<?php echo $buku['id']; ?>" style="text-decoration: none;">Hapus</a></button>
-                        <button class="lihat"><a href="edit-buku.php?id=<?php echo $buku['id']; ?>" style="text-decoration: none;">Edit</a></button>
+                        <button class="hapus"><a href="?id=<?php echo $buku['id']; ?>" style="text-decoration: none; color:white;">Hapus</a></button>
+                        <button class="lihat"><a href="edit-buku.php?id=<?php echo $buku['id']; ?>" style="text-decoration: none; color:white;">Edit</a></button>
                     </div>
                 </div>
             <?php

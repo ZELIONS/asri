@@ -136,10 +136,10 @@ if (isset($_SESSION['message'])) {
                 <?php endforeach; ?>
 
                 <p id="tanggalDipinjam">Tanggal Dipinjam: <?php echo date("Y-m-d"); ?></p>
-                <p style="font-size: 20px;">Pinjam Sampai Tanggal:</p>
+                <p style="font-size: 20px;">Pinjam Sampai Tanggal: (Max: 7 Hari)</p>
 
                 <form class="form" action="" method="post" name="pinjam">
-                    <input name="batas_waktu" type="date" class="date" value="<?php echo date("Y-m-d"); ?>">
+                <input name="batas_waktu" type="date" class="date" value="<?php echo date('Y-m-d'); ?>" min="<?php echo date('Y-m-d', strtotime('+1 day')); ?>" max="<?php echo date('Y-m-d', strtotime('+7 day')); ?>">
                     <input type="submit" value="pinjam" class="pinjam">
                     <input type="hidden" name="_pinjam" value="pinjam">
                 </form>

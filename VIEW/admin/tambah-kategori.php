@@ -140,8 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['_upload'])) {
 
 
         <form class="form" method="POST" action="" name="upload">
-            <label>Nama Kategori</label>
-            <input type="text" name="nama-kategori" placeholder="Nama Kategori" class="nama" required>
+            <input type="text" name="nama-kategori" placeholder="Nama Kategori" class="nama" required >
             <input type="submit" value="Tambah" class="submit">
             <input type="hidden" name="_upload" value="upload">
         </form>
@@ -156,7 +155,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['_upload'])) {
         <div class="top-container">
             <div class="top-container-head">
                 <div class="id">
-                    <p>Id</p>
+                    <p>ID</p>
                 </div>
 
                 <div class="nama-buku">
